@@ -1,0 +1,79 @@
+* {
+  /*  border:  1px solid ;*/
+  box-sizing: border-box;
+}
+.body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.container {
+  border: 1px solid;
+  background-color: transparent;
+  display: grid; /* establecer la la malla del grid*/
+  grid-template-areas:  /* establecer las areas de la malla se colocan tres x q son tres */
+    "header header header"
+    "nav nav nav"
+    "slider slider slider"
+    "section section section"
+    "footer footer footer";
+  column-gap: 10px; /* quita el espacio*/
+  align-items: center; /* centra los items*/
+}
+
+.header {
+  border: 1px solid;
+  grid-area: header;
+  background-color: #67b5dd;
+  color: #fff; /* formato de colores*/
+}
+
+.nav {
+  border: 1px solid;
+  grid-area: nav;
+  background-color: #fff;
+  width: 80%; /* ancho del contenido*/
+  margin: 0 auto;
+}
+
+.slider {
+  border: 1px solid;
+  grid-area: slider;
+  background-color: #f79327;
+  background: url();
+  height: 300px; /* alto del contenido*/
+  background-repeat: no-repeat; /* para que no se repita*/
+  background-position: center; /*posicionar la imagen*/
+  background-size: cover; /* tamaño del backgroud de la imagen*/
+}
+
+.section {
+  border: 1px solid;
+  grid-area: section;
+  background-color: #e1eaed;
+}
+.articles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    width: 80%;
+    max-width: 81%;
+    margin: 0 auto;
+    padding: 10px;
+}
+.article {
+  background-color: #fff;
+}
+
+.foter {
+  border: 1px solid;
+  grid-area: footer;
+  background-color: #013d56;
+}
+.foot{
+    border: 1px solid;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    height: auto;
+}
